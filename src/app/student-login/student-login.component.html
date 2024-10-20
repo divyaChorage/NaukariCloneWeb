@@ -1,0 +1,23 @@
+<p>student-login works!</p>
+
+
+
+<div *ngIf="showLoginform==0">
+    name:<input type="text" [(ngModel)]="name">
+    email:<input type="text" [(ngModel)]="email">
+    mobile:<input type="number" [(ngModel)]="mobile">
+    <button (click)="register()">register</button>
+
+    <button (click)="alreadyLogged()">Already Logged In</button>
+
+</div>
+
+
+
+<div *ngIf="showLoginform==1">
+    mobile/email:<input type="text" [(ngModel)]="username">
+    password:<input type="number" [(ngModel)]="password">
+    <button (click)="loginStudent()">Login</button>
+</div>
+
+
