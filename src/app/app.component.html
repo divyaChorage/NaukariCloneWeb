@@ -1,11 +1,12 @@
-<div>
+
+  <div class="container">
     <h1>{{ title }}</h1>
-  
+    
     <!-- Conditionally display components -->
+    <app-welcome *ngIf="whatToShow === 0"></app-welcome>
     <app-student-login *ngIf="whatToShow === 1"></app-student-login>
     <app-recruiter-login *ngIf="whatToShow === 2"></app-recruiter-login>
-  
-    <!-- Display welcome component by default -->
-    <app-welcome *ngIf="whatToShow === 0"></app-welcome>
   </div>
+  
+  
   

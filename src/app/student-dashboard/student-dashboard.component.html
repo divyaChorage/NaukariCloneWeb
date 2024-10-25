@@ -1,0 +1,15 @@
+<!-- Buttons to toggle between Personal Data and Apply Drives -->
+<div *ngIf="showstudentComponents === 0">
+    <button (click)="studentComponents(1)">Personal Data</button>
+    <button (click)="studentComponents(2)">Apply Drives</button>
+  </div>
+  
+  <!-- Show Personal Data component when showstudentComponents is 1 -->
+  <app-studet-personal-data *ngIf="showstudentComponents === 1"></app-studet-personal-data>
+  
+  <!-- Show Apply Drives component when showstudentComponents is 2 -->
+  <app-applydrive *ngIf="showstudentComponents === 2"></app-applydrive>
+  
+  <!-- Add a back button to go back to the main view -->
+  <button *ngIf="showstudentComponents !== 0" (click)="studentComponents(0)">BackToDashboard</button>
+  

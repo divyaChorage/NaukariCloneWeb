@@ -9,13 +9,18 @@ import { HttpClient } from '@angular/common/http';
 })
 export class StudentLoginComponent {
 
-  constructor(private app:AppComponent,private http:HttpClient){}
+  constructor(private app:AppComponent,private http:HttpClient){
+
+  }
 
   name:string='';
   email:string='';
   mobile:number=0;
 
   showLoginform:number=0;
+
+
+  
 
   register()
   {
@@ -51,6 +56,7 @@ export class StudentLoginComponent {
 
   username:string='';
   password:string='';
+  componentShow:number=0;
 
   alreadyLogged()
   {
@@ -61,25 +67,37 @@ export class StudentLoginComponent {
 
 
   loginStudent() {
-    let obj = [this.username, this.password.toString()];
+    let obj = [this.username, this.password];
     let url = this.app.url + 'loginStudent';
     
-    this.http.post(url, obj).subscribe((data) => {
-        if (data == -1) {
+    this.http.post(url, obj).subscribe((id) => {
+        if (id == -1) {
             window.alert("Please enter a valid email");
-        } else if (data == -2) {
+        } else if (id == -2) {
             window.alert("Please enter a valid mobile number");
-        } else if (data == -3) { // Corrected this line to check for password mismatch
+        } else if (id == -3) { 
             window.alert("Password does not match");
-        } else {
+        } else{
             window.alert("Login successful");
-            // You can also handle further actions here, such as navigating to a dashboard
-        }  
+            this.app.userId = id;
+
+            console.log(id," login user")
+
+      this.app.userId=id;
+this.componentShow=1;
+this.showLoginform=2;
+
+          }  
     }, (error) => {
-        // Optional: Handle HTTP errors here, such as network issues
         window.alert("An error occurred during the login process.");
-        console.error(error);
+        console.error(error);  
     });
 }
+
+
+
+
+
+
 
 }

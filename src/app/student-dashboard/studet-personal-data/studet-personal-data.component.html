@@ -1,0 +1,102 @@
+<p>studet-personal-data works!</p>
+<!-- Personal Information Section -->
+
+
+<div>
+    
+    <label for="mobile">Mobile Number:</label>
+<input id="mobile" type="text" [(ngModel)]="mobileNumber">
+
+<label for="address">Full Address:</label>
+<textarea id="address" [(ngModel)]="address"></textarea>
+
+<label for="name">Name:</label>
+<input id="name" type="text" [(ngModel)]="name">
+
+<label for="gender">Gender:</label>
+<select id="gender" [(ngModel)]="gender">
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+</select>
+
+
+<label for="aadhar">Aadhar Card Number:</label>
+<input id="aadhar" type="text" [(ngModel)]="aadharCardNumber">
+
+<!-- Academic Information Section -->
+<h3>10th Grade Information</h3>
+<label for="tenthPercentage">Tenth Percentage:</label>
+<input id="tenthPercentage" type="text" [(ngModel)]="tenthPercentage">
+
+<label for="tenthYear">Tenth Year:</label>
+<input id="tenthYear" type="text" [(ngModel)]="tenthYear">
+
+<h3>12th/Diploma Information</h3>
+<label for="twelfthPercentage">Twelfth/Diploma Percentage:</label>
+<input id="twelfthPercentage" type="text" [(ngModel)]="twelfthPercentage">
+
+<label for="twelfthYear">Twelfth/Diploma Year:</label>
+<input id="twelfthYear" type="text" [(ngModel)]="twelfthYear">
+
+<!-- Graduation Information -->
+<h3>Graduation Information</h3>
+<label for="gradYear">Graduation Year:</label>
+<input id="gradYear" type="text" [(ngModel)]="graduationYear">
+
+<label for="gradPercentage">Graduation Percentage:</label>
+<input id="gradPercentage" type="text" [(ngModel)]="graduationPercentage">
+
+<label for="gradStream">Graduation Stream:</label>
+<input id="gradStream" type="text" [(ngModel)]="graduationStream">
+
+<label for="gradCollege">Graduation College Name:</label>
+<input id="gradCollege" type="text" [(ngModel)]="graduationCollegeName">
+
+<label for="gradUniversity">Graduation University Name:</label>
+<input id="gradUniversity" type="text" [(ngModel)]="graduationUniversityName">
+
+<!-- Post Graduation Information -->
+<h3>Post Graduation Information</h3>
+<label for="postGradYear">Post Graduation Year:</label>
+<input id="postGradYear" type="text" [(ngModel)]="postGraduationYear">
+
+<label for="postGradPercentage">Post Graduation Percentage:</label>
+<input id="postGradPercentage" type="text" [(ngModel)]="postGraduationPercentage">
+
+<label for="postGradStream">Post Graduation Stream:</label>
+<input id="postGradStream" type="text" [(ngModel)]="postGraduationStream">
+
+<label for="postGradCollege">Post Graduation College Name:</label>
+<input id="postGradCollege" type="text" [(ngModel)]="postGraduationCollegeName">
+
+<label for="postGradUniversity">Post Graduation University Name:</label>
+<input id="postGradUniversity" type="text" [(ngModel)]="postGraduationUniversityName">
+
+<!-- Additional Education Information -->
+<h3>Highest Education</h3>
+<label for="highestEducation">Highest Education:</label>
+<input id="highestEducation" type="text" [(ngModel)]="highestEducation">
+
+<label for="highestEduYear">Highest Education Year:</label>
+<input id="highestEduYear" type="text" [(ngModel)]="highestEducationYear">
+
+<label for="highestEduLastYearPercentage">Highest Education Last Year Percentage:</label>
+<input id="highestEduLastYearPercentage" type="text" [(ngModel)]="highestEducationLastYearPercentage">
+
+<label for="highestEduAggregate">Highest Education Aggregate Percentage:</label>
+<input id="highestEduAggregate" type="text" [(ngModel)]="highestEducationAggregatePercentage">
+
+<!-- Education Gap and Backlog -->
+<label for="yearGap">Year Gap In Education (0-No, 1-Yes):</label>
+<input id="yearGap" type="text" [(ngModel)]="yearGapInEducation">
+
+<label for="liveBacklog">Live Backlog (0-No, 1-Yes):</label>
+<input id="liveBacklog" type="text" [(ngModel)]="liveBacklog">
+
+
+<br>
+<br>
+<br>
+<button (click)="updatToServer()">updateToServer</button>
+
+</div>

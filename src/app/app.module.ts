@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { RecruiterLoginComponent } from './recruiter-login/recruiter-login.component';
 import { StudentLoginComponent } from './student-login/student-login.component';
+import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
+import { StudetPersonalDataComponent } from './student-dashboard/studet-personal-data/studet-personal-data.component';
+import { ApplydriveComponent } from './student-dashboard/applydrive/applydrive.component';
 
 
 
@@ -15,6 +18,9 @@ import { StudentLoginComponent } from './student-login/student-login.component';
     WelcomeComponent,
     RecruiterLoginComponent,
     StudentLoginComponent,
+    StudentDashboardComponent,
+    StudetPersonalDataComponent,
+    ApplydriveComponent,
  
   
   ],

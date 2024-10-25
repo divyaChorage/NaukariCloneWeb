@@ -17,5 +17,6 @@ export class AppComponent {
    url:string='http://localhost:8080/';
   
 
+   userId:any;
 
 }

@@ -1,23 +1,31 @@
-<p>student-login works!</p>
-
-
-
-<div *ngIf="showLoginform==0">
-    name:<input type="text" [(ngModel)]="name">
-    email:<input type="text" [(ngModel)]="email">
-    mobile:<input type="number" [(ngModel)]="mobile">
-    <button (click)="register()">register</button>
-
+<div class="student-login-form" *ngIf="showLoginform == 0">
+    <h2>Student Registration</h2>
+    <label for="name">Name:</label>
+    <input id="name" type="text" [(ngModel)]="name">
+    
+    <label for="email">Email:</label>
+    <input id="email" type="text" [(ngModel)]="email">
+    
+    <label for="mobile">Mobile:</label>
+    <input id="mobile" type="number" [(ngModel)]="mobile">
+    
+    <button (click)="register()">Register</button>
     <button (click)="alreadyLogged()">Already Logged In</button>
-
-</div>
-
-
-
-<div *ngIf="showLoginform==1">
-    mobile/email:<input type="text" [(ngModel)]="username">
-    password:<input type="number" [(ngModel)]="password">
+  </div>
+  
+  <div class="student-login-form" *ngIf="showLoginform == 1">
+    <h2>Student Login</h2>
+    <label for="username">Mobile/Email:</label>
+    <input id="username" type="text" [(ngModel)]="username">
+    
+    <label for="password">Password:</label>
+    <input id="password" type="text" [(ngModel)]="password">
+    
     <button (click)="loginStudent()">Login</button>
-</div>
+  </div>
 
+  <div  *ngIf="componentShow == 1">
+  <app-student-dashboard></app-student-dashboard>
+  </div>
 
+  
