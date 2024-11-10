@@ -1,0 +1,38 @@
+<p>recruiter-registration works!</p>
+
+<!-- Recruiter Information Section -->
+<div>
+    <h2>Recruiter Information</h2>
+    
+    <label for="name">Full Name:</label>
+    <input id="name" type="text" [(ngModel)]="fullName" placeholder="Enter your full name">
+
+    <label for="email">Email:</label>
+    <input id="email" type="email" [(ngModel)]="email" placeholder="Enter your email">
+
+    <label for="mobile">Mobile Number:</label>
+    <input id="mobile" type="text" [(ngModel)]="mobileNumber" placeholder="Enter your mobile number">
+
+    <label for="designation">Designation:</label>
+    <input id="designation" type="text" [(ngModel)]="designation" placeholder="Enter your job title">
+
+   
+</div>
+
+<!-- Company Information Section -->
+<div>
+    <h2>Company Information</h2>
+
+
+    <label for="industryType">Industry Type:</label>
+    <input id="industryType" type="text" [(ngModel)]="industryType" placeholder="Enter industry type (e.g., IT, Finance)">
+
+  
+</div>
+
+</div>
+
+<!-- Submit Button -->
+<div>
+    <button (click)="registerRecruiter()">Register</button>
+</div>

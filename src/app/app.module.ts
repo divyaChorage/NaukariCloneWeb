@@ -9,6 +9,9 @@ import { StudentLoginComponent } from './student-login/student-login.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
 import { StudetPersonalDataComponent } from './student-dashboard/studet-personal-data/studet-personal-data.component';
 import { ApplydriveComponent } from './student-dashboard/applydrive/applydrive.component';
+import { RecruiterdashboardComponent } from './recruiterdashboard/recruiterdashboard.component';
+import { RecruiterInfoComponent } from './recruiterdashboard/recruiter-info/recruiter-info.component';
+import { CompaniesdataComponent } from './recruiterdashboard/companiesdata/companiesdata.component';
 
 
 
@@ -21,6 +24,9 @@ import { ApplydriveComponent } from './student-dashboard/applydrive/applydrive.c
     StudentDashboardComponent,
     StudetPersonalDataComponent,
     ApplydriveComponent,
+    RecruiterdashboardComponent,
+    RecruiterInfoComponent,
+    CompaniesdataComponent,
  
   
   ],

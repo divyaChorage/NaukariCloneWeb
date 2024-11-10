@@ -1,1 +1,34 @@
-<p>recruiter-login works!</p>
+<!-- <p>recruiter-login works!</p> -->
+
+
+<div class="student-login-form" *ngIf="showLoginform == 0">
+    <h2>recruiter Registration</h2>
+    <label for="name">Name:</label>
+    <input id="name" type="text" [(ngModel)]="name">
+    
+    <label for="email">Email:</label>
+    <input id="email" type="text" [(ngModel)]="email">
+    
+    <label for="mobile">Mobile:</label>
+    <input id="mobile" type="number" [(ngModel)]="mobile">
+    
+    <button (click)="register()">Register</button>
+    <button (click)="alreadyLogged()">Already Logged In</button>
+  </div>
+  
+  <div class="student-login-form" *ngIf="showLoginform == 1">
+    <h2>recruiter-login </h2>
+    <label for="username">Mobile/Email:</label>
+    <input id="username" type="text" [(ngModel)]="username">
+    
+    <label for="password">Password:</label>
+    <input id="password" type="text" [(ngModel)]="password">
+    
+    <button (click)="loginStudent()">Login</button>
+  </div>
+
+  <div  *ngIf="componentShow == 1">
+ <app-recruiterdashboard></app-recruiterdashboard>
+  </div>
+
+  
