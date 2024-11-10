@@ -29,5 +29,5 @@ export class StudentDashboardComponent {
   studentComponents(num:number)
   {
 this.showstudentComponents=num;
-  }
+  } 
 }

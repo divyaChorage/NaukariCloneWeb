@@ -115,6 +115,6 @@ export class StudetPersonalDataComponent {
       } else {
         window.alert('Something else');
       }
-    });
+    }); 
   }
 }

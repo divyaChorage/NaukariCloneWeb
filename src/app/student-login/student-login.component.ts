@@ -64,7 +64,7 @@ export class StudentLoginComponent {
   }
 
 
-
+ 
 
   loginStudent() {
     let obj = [this.username, this.password];

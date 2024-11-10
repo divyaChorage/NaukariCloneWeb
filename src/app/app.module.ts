@@ -13,7 +13,7 @@ import { RecruiterdashboardComponent } from './recruiterdashboard/recruiterdashb
 import { RecruiterInfoComponent } from './recruiterdashboard/recruiter-info/recruiter-info.component';
 import { CompaniesdataComponent } from './recruiterdashboard/companiesdata/companiesdata.component';
 
-
+ 
 
 @NgModule({
   declarations: [

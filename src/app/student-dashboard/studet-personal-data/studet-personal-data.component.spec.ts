@@ -13,7 +13,7 @@ describe('StudetPersonalDataComponent', () => {
     fixture = TestBed.createComponent(StudetPersonalDataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }); 
 
   it('should create', () => {
     expect(component).toBeTruthy();

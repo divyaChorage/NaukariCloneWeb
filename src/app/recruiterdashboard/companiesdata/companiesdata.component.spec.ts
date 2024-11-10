@@ -13,7 +13,7 @@ describe('CompaniesdataComponent', () => {
     fixture = TestBed.createComponent(CompaniesdataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }); 
 
   it('should create', () => {
     expect(component).toBeTruthy();

@@ -15,3 +15,4 @@ export class WelcomeComponent {
     this.app.whatToShow = num; // Set the value to show student or recruiter login
   }
 }
+ 

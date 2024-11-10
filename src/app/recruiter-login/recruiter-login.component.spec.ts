@@ -9,7 +9,7 @@ describe('RecruiterLoginComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [RecruiterLoginComponent]
-    });
+    }); 
     fixture = TestBed.createComponent(RecruiterLoginComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -13,7 +13,7 @@ describe('ApplydriveComponent', () => {
     fixture = TestBed.createComponent(ApplydriveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }); 
 
   it('should create', () => {
     expect(component).toBeTruthy();

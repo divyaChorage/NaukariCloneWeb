@@ -28,7 +28,7 @@ export class RecruiterInfoComponent {
       designation: this.designation,
 
       industryType: this.industryType,
-
+ 
     });
   }
 }

@@ -14,7 +14,7 @@ export class RecruiterLoginComponent {
 
   }
 
-  name:string='';
+  name:string=''; 
   email:string='';
   mobile:number=0;
 
