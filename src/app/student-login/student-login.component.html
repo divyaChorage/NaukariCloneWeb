@@ -1,17 +1,4 @@
-<div class="student-login-form" *ngIf="showLoginform == 0">
-    <h2>Student Registration</h2>
-    <label for="name">Name:</label>
-    <input id="name" type="text" [(ngModel)]="name">
-    
-    <label for="email">Email:</label>
-    <input id="email" type="text" [(ngModel)]="email">
-    
-    <label for="mobile">Mobile:</label>
-    <input id="mobile" type="number" [(ngModel)]="mobile">
-    
-    <button (click)="register()">Register</button>
-    <button (click)="alreadyLogged()">Already Logged In</button>
-  </div>
+
   
   <div class="student-login-form" *ngIf="showLoginform == 1">
     <h2>Student Login</h2>
@@ -28,4 +15,19 @@
   <app-student-dashboard></app-student-dashboard>
   </div>
 
+
+  <div class="student-login-form" *ngIf="showLoginform == 0">
+    <h2>Student Registration</h2>
+    <label for="name">Name:</label>
+    <input id="name" type="text" [(ngModel)]="name">
+    
+    <label for="email">Email:</label>
+    <input id="email" type="text" [(ngModel)]="email">
+    
+    <label for="mobile">Mobile:</label>
+    <input id="mobile" type="number" [(ngModel)]="mobile">
+    
+    <button (click)="register()">Register</button>
+    <button (click)="alreadyLogged()">Already Logged In</button>
+  </div>
   
