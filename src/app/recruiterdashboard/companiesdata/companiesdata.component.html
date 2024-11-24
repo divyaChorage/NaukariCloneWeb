@@ -1,2 +1,56 @@
-<p>companiesdata works!</p>
- 
+
+<div *ngIf="showAllComapny==0">
+
+<div class="container">
+    <h2>Add Company Details</h2>
+    <div>
+      <label for="companyName">Company Name:</label>
+      <input id="companyName" type="text" [(ngModel)]="companyName" />
+    </div>
+    <div>
+      <label for="position">Position:</label>
+      <input id="position" type="text" [(ngModel)]="position" />
+    </div>
+    <div>
+      <label for="noOfVacancies">Number of Vacancies:</label>
+      <input id="noOfVacancies" type="number" [(ngModel)]="noOfVacancies" />
+    </div>
+    <div>
+      <label for="skillsRequired">Skills Required (comma-separated):</label>
+      <input id="skillsRequired" type="text" [(ngModel)]="skillsRequired" />
+    </div>
+    <div>
+      <label for="experience">Experience:</label>
+      <input id="experience" type="text" [(ngModel)]="experience" />
+    </div>
+    <div>
+      <label for="bond">Bond:</label>
+      <input id="bond" type="number"[(ngModel)]="bond">
+       
+    </div>
+    <div>
+      <label for="salary">Salary:</label>
+      <input id="salary" type="text" [(ngModel)]="salary" />
+    </div>
+    <div>
+      <label for="passoutYear">Passout Year:</label>
+      <input id="passoutYear" type="number" [(ngModel)]="passoutYear" />
+    </div>
+    <div>
+      <label for="applicationDeadline">Application Deadline:</label>
+      <input id="applicationDeadline" type="date" [(ngModel)]="applicationDeadline" />
+    </div>
+    <button (click)="addCompanyData()">Add Company</button>
+  </div>
+
+
+
+  <button (click)="viewAddedComapnies()">View Added Company</button>
+</div>
+
+
+
+
+  <div *ngIf="showAllComapny==1">
+<app-allcoampnies></app-allcoampnies>
+  </div>

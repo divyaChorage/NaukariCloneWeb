@@ -12,6 +12,7 @@ import { ApplydriveComponent } from './student-dashboard/applydrive/applydrive.c
 import { RecruiterdashboardComponent } from './recruiterdashboard/recruiterdashboard.component';
 import { RecruiterInfoComponent } from './recruiterdashboard/recruiter-info/recruiter-info.component';
 import { CompaniesdataComponent } from './recruiterdashboard/companiesdata/companiesdata.component';
+import { AllcoampniesComponent } from './recruiterdashboard/companiesdata/allcoampnies/allcoampnies.component';
 
  
 
@@ -27,6 +28,7 @@ import { CompaniesdataComponent } from './recruiterdashboard/companiesdata/compa
     RecruiterdashboardComponent,
     RecruiterInfoComponent,
     CompaniesdataComponent,
+    AllcoampniesComponent,
  
   
   ],

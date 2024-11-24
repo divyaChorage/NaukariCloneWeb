@@ -1,9 +1,20 @@
-<p>recruiterdashboard works!</p>
+
+<div *ngIf="showrecruterDash===0">
+    <button (click)="toNavigateComapanyData(2)">
+        recrituter 
+        </button> 
+    <button (click)="toNavigateComapanyData(1)">
+    company add
+    </button> 
+
+</div>
 
 
-<button>
-    recruiter info
-</button>
-<button>
-   compamies data
-</button> 
+
+<div *ngIf="navigateToComanyData===1">
+    <app-companiesdata></app-companiesdata>
+</div>
+
+<div *ngIf="navigateToComanyData===2">
+    <app-companiesdata></app-companiesdata>
+</div>

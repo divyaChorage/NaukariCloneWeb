@@ -1,2 +1,35 @@
 <p>applydrive works!</p>
- 
+<div class="container">
+    <h2 class="text-center">Available Companies</h2>
+    <div *ngIf="companies && companies.length > 0; else noCompanies" class="company-list">
+      <div class="company-card" *ngFor="let company of companies">
+        <h3>{{ company.companyName }}</h3>
+        <p><strong>position:</strong> {{ company.position }}</p>
+        <p><strong>noOfVacancies:</strong> {{ company.noOfVacancies }}</p>
+      
+        <p><strong>bond:</strong> {{ company.bond }}</p>
+        <p><strong>experience:</strong> {{ company.experience }}</p>
+        <p><strong>salary:</strong> {{ company.salary }}</p>
+        <p><strong>passoutYear:</strong> {{ company.passoutYear }}</p>
+        <p><strong>applicationDeadline:</strong> {{ company.applicationDeadline }}</p>
+        <form (ngSubmit)="apply(company.id)">
+          <div class="form-group">
+            <label for="resume-{{ company.id }}">Upload Resume:</label>
+            <input 
+              type="file" 
+              id="resume-{{ company.id }}" 
+              class="form-control" 
+              (change)="onFileSelected($event, company.id)" 
+              required>
+          </div>
+          <button type="apply(company.id)" class="btn btn-primary">Apply</button>
+        </form>
+      </div>
+   </div> 
+  
+    <!-- Fallback when there are no companies -->
+    <ng-template #noCompanies>
+      <p class="text-center">No companies available at the moment.</p>
+    </ng-template>
+  </div>
+  

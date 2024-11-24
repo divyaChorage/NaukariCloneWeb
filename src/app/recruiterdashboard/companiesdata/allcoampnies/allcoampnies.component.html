@@ -1,0 +1,88 @@
+
+<div *ngIf="showStudentsForComapnye==0">
+
+<div class="container">
+    <h2>All Companies</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>companyName</th>
+          <th>experience</th>
+         
+          <th>No of Vacancies</th>
+          <th>passoutYear</th>
+          <th>Company Name</th>
+          <th>Position</th>
+          <th>salary</th>
+          <th>View Applicants</th>
+     
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let company of comapnies">
+          <td>{{ company.id }}</td>
+          <td>{{ company.companyName
+        }}</td>
+          <td>{{ company.
+            experience
+             || 'N/A' }}</td>
+          <td>{{ company.noOfVacancies
+            || 'N/A' }}</td>
+          <td>{{ company.passoutYear }}</td>
+
+          <td>{{ company.
+            position
+             }}</td>
+          <td>{{ company.
+            salary
+             || 'N/A' }}</td>
+          <td>{{ company.skillsRequired   || 'N/A' }}</td>
+       <button (click)="viewApplicatnsForThisCompany(company.id)">view Applicants </button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+
+
+<div *ngIf="showStudentsForComapnye==1">
+
+  <div class="applicants-container">
+    <h2>Applicants for the Company</h2>
+    <table class="applicants-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile</th>
+          <th>Resume</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ student.name || 'N/A' }}</td>
+          <td>{{ student.email }}</td>
+          <td>{{ student.mobile }}</td>
+         
+          <td>
+            <button (click)="downloadResume(student.resumePath)">Download</button>
+          </td>
+         
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="export-btn-container">
+    <button (click)="exportToExcel()">Export to Excel</button>
+  </div>
+  
+  
+</div>

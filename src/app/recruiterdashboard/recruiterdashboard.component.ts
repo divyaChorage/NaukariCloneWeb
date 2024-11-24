@@ -7,5 +7,23 @@ import { Component } from '@angular/core';
 })
 export class RecruiterdashboardComponent {
 
+  showrecruterDash:number=0;
+  navigateToComanyData:number=0;
+
+
+
+
+  toNavigateComapanyData(num:number)
+  {
+    console.log(num);
+    
+this.navigateToComanyData=num
+this.showrecruterDash=1;
+  }
+
+
+
+
+  
 }
  
