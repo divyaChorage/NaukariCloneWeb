@@ -1,1 +1,78 @@
- 
+ /* Reset styles for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling for the body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    padding: 50px;
+  }
+  
+  /* Container for buttons */
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+    text-align: center;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Button for "BackToDashboard" with a different color */
+  button:nth-child(3) {
+    background-color: #6c757d;
+  }
+  
+  button:nth-child(3):hover {
+    background-color: #5a6268;
+  }
+  
+  /* Component container with margin */
+  app-studet-personal-data, app-applydrive {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Make the layout responsive */
+  @media (max-width: 600px) {
+    button {
+      width: 100%;
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    app-studet-personal-data, app-applydrive {
+      margin-top: 20px;
+      padding: 15px;
+    }
+  }
+  

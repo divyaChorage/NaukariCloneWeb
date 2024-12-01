@@ -1,0 +1,105 @@
+/* General reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Form container with padding, background, and box-shadow */
+div {
+    width: 100%;
+    max-width: 400px; /* Adjust the max width for better fit */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Reduced padding for a compact look */
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+/* Section headers for better visibility, with darker color */
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #181717; /* Dark title color */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 4px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #120e0e;
+    margin-top: 9px;
+}
+
+/* Input fields and textarea styling */
+input[type="text"], input[type="number"], select, textarea {
+    width: 60%;
+    padding: 10px; /* Reduced padding for compactness */
+    margin-bottom: 12px; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px; /* Slightly smaller font size */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Input focus styles */
+input[type="text"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+/* Styling for textarea */
+textarea {
+    height: 30px; /* Reduced height for a more compact look */
+    resize: vertical;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 6px; /* Reduced padding */
+    font-size: 14px; /* Adjusted font size */
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 12px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    div {
+        padding: 15px; /* Further reduce padding on small screens */
+    }
+
+    h3 {
+        font-size: 16px; /* Smaller font size for section titles */
+    }
+
+    input[type="text"], input[type="number"], select, textarea, button {
+        font-size: 13px; /* Smaller font size for input fields and buttons */
+    }
+}

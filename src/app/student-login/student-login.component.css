@@ -1,33 +1,117 @@
-/* student-login.component.css */
-.student-login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.student-login-form input[type="text"], .student-login-form input[type="number"], .student-login-form input[type="password"] {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-.student-login-form button {
-    width: 85%;
-    background-color: #28a745;
-    color: white;
-    padding: 10px;
-    margin: 10px 0;
+  }
+  
+  /* Set a background color for the whole page */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    padding: 50px;
+  }
+  
+  /* Centering the login and registration form */
+  .student-login-form {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form header */
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Label styles */
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+  }
+  
+  /* Input field styles */
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  /* Input focus styles */
+  input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #007bff;
+  }
+  
+  /* Button styles */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.student-login-form button:hover {
-    background-color: #218838;
-}
- 
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  /* Button hover styles */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Registration form specific styles */
+  .student-login-form button:last-child {
+    background-color: #6c757d;
+  }
+  
+  .student-login-form button:last-child:hover {
+    background-color: #fa5c2c;
+  }
+  
+  /* Adjusting styles for the "Already Logged In" button */
+  .student-login-form button:last-child {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Dashboard view styles */
+  app-student-dashboard {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #4c4646;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .student-login-form {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    input[type="text"], input[type="number"], button {
+      font-size: 14px;
+    }
+  }
+  

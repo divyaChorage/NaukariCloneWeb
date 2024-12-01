@@ -61,6 +61,8 @@ export class ApplydriveComponent {
 
           console.log('Application submitted successfully:', response);
           alert('Application submitted successfully!');
+          this.companies = this.companies.filter((company: any) => company.id !== companyId);
+
         },
         (error) => {
           console.error('Error submitting application:', error);
@@ -75,6 +77,25 @@ export class ApplydriveComponent {
   
 
 
+  loadAppliedCompanies:any
+showAppliedCompany:number=0;
+
+  viewAppliedCompanies()
+  {
+    this.showAppliedCompany=1;
+    const url = this.app.url + 'viewAppliedCompanies'+'/'+this.app.userId;
+    this.http.get(url).subscribe(
+      (response) => {
+       
+       console.log("--",response);
+       this.loadAppliedCompanies=response;
+      },
+      (error) => {
+        console.error('getting  apllied companiesz', error);
+        alert('Your  not  applied any companies');
+      }
+    );
+  }
 
 
   

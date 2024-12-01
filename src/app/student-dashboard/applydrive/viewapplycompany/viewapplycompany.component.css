@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Title Styling */
+  h2.text-center {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #007bff; /* Professional Blue */
+  }
+  
+  /* Individual Company Card */
+  .company-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px); /* 3 cards per row */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .company-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card Title */
+  .company-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  
+  /* Card Details */
+  .company-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  
+  .company-card p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Apply Button for viewing applied companies */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Center the buttons below the applied companies */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .button-container button {
+    width: 48%;
+  }
+  
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .company-card {
+      width: calc(50% - 20px); /* 2 cards per row on medium screens */
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    h2.text-center {
+      font-size: 28px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .company-card {
+      width: 100%; /* 1 card per row on small screens */
+    }
+  
+    h2.text-center {
+      font-size: 24px;
+    }
+  }
+  

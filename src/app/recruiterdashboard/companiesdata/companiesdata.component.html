@@ -1,7 +1,7 @@
 
 <div *ngIf="showAllComapny==0">
 
-<div class="container">
+  <div class="container">
     <h2>Add Company Details</h2>
     <div>
       <label for="companyName">Company Name:</label>
@@ -25,8 +25,7 @@
     </div>
     <div>
       <label for="bond">Bond:</label>
-      <input id="bond" type="number"[(ngModel)]="bond">
-       
+      <input id="bond" type="number" [(ngModel)]="bond" />
     </div>
     <div>
       <label for="salary">Salary:</label>
@@ -42,7 +41,7 @@
     </div>
     <button (click)="addCompanyData()">Add Company</button>
   </div>
-
+  
 
 
   <button (click)="viewAddedComapnies()">View Added Company</button>

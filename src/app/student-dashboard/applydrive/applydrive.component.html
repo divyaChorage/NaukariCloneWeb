@@ -1,3 +1,7 @@
+
+
+<div *ngIf="showAppliedCompany==0">
+
 <p>applydrive works!</p>
 <div class="container">
     <h2 class="text-center">Available Companies</h2>
@@ -33,3 +37,22 @@
     </ng-template>
   </div>
   
+
+<button (click)="viewAppliedCompanies()">View Applied Companies</button>
+
+</div>
+
+<div *ngIf="showAppliedCompany === 1">
+
+  <div *ngFor="let company of loadAppliedCompanies" class="company-card">
+    <h3>{{ company.companyName || 'Company Name Not Available' }}</h3>
+    <p><strong>Position:</strong> {{ company.position || 'Position Not Available' }}</p>
+    <p><strong>Experience Required:</strong> {{ company.experience || 'Experience Not Available' }}</p>
+    <p><strong>Salary:</strong> {{ company.salary || 'Salary Not Available' }}</p>
+    <p><strong>Vacancies:</strong> {{ company.noOfVacancies || 'No Vacancies Available' }}</p>
+  </div> 
+</div>
+
+
+
+
